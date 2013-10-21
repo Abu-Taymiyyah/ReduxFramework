@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
         //slider init
         var spinner = reduxSpinners[jQuery(this).attr('rel')];
 
-        jQuery('.spinner-input').spinner({
+        jQuery("#" + spinner.id).spinner({
             value: parseInt(spinner.val, null),
             min: parseInt(spinner.min, null),
             max: parseInt(spinner.max, null),
